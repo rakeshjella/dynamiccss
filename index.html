@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="orange.css" rel="stylesheet" type="text/css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <p class="theme-1">hello</p>
+    <button id="orange">green</button>
+    <button id="green">orange</button>
+</body>
+    <script>
+        $('#orange').click(function () {
+            $('link[href="orange.css"]').attr('href', 'green.css');
+        });
+        $('#green').click(function () {
+            $('link[href="green.css"]').attr('href', 'orange.css');
+        });
+    </script>
+</html>
